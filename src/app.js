@@ -64,7 +64,7 @@ app.get('/weather', (req, res) => {
             }
             
             //destruction was not used below, instead used foracastData
-            const {weatherDescription, temp, feelslike} = forecastData
+            const {weatherDescription, temp, feelslike, region} = forecastData
           
             res.send({
                 forecast: forecastData,
